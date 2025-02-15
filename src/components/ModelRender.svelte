@@ -23,15 +23,12 @@
         renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
         canvas.innerHTML = '';
         canvas.appendChild(renderer.domElement);
-        // camera.rotateY(Math.PI);
-        // camera.position.set(0, 0, -20);
-        camera.position.set(0, 0, 20)
+        camera.rotateY(Math.PI);
+        camera.position.set(0, 0, -20);
 
         const light = new THREE.DirectionalLight(0xffffff, 1);
         light.position.set(0, 0, -30);
         light.rotateX(35 * Math.PI / 180);
-        light.position.set(0, 0, 30);
-        // light.rotateX(35 * Math.PI / 180);
         scene.add(light);
     }
 
