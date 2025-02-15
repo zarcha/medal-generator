@@ -8,7 +8,7 @@
     }
 
     function generate(){
-        if(value){
+        if(valid){
             generating = true;
             value = tmpValue;
         }
