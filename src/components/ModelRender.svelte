@@ -3,6 +3,7 @@
     import * as THREE from 'three';
     import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
     import { STLExporter} from "three/addons";
+    import {onMount} from "svelte";
 
     let { value } = $props();
     let generating = $state(false);
@@ -17,6 +18,7 @@
         camera = new THREE.PerspectiveCamera(75, 300 / 300, .1, 1000);
         renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setClearColor(0x000000, 0);
+        renderer.setPixelRatio(window.devicePixelRatio);
         const canvas = document.getElementById('canvas');
         renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
         canvas.innerHTML = '';
@@ -95,29 +97,28 @@
             generating = false;
         }
     }
+
+    onMount(() => {
+        generateMedal();
+    });
 </script>
 
-<div class="medal-container">
-
-    <div id="canvas">
-        {#if generating}
-            <div>Generating Medal...</div>
-        {/if}
+<div class="card medal-container">
+    <div class="card-body">
+        <div id="canvas"></div>
+        <button class="btn btn-warning" onclick={exportSceneToSTL}>Save Medal</button>
     </div>
-    <button class="btn btn-warning" onclick={exportSceneToSTL}>Save Medal</button>
-    <button class="btn btn-warning" onclick={generateMedal}>Generate Medal</button>
 </div>
 
 <style>
     .medal-container {
         text-align: center;
         margin-bottom: 10px;
-        border-radius: 50px;
-    }
 
-    #canvas {
-        width: 300px;
-        height: 300px;
-        margin: 10px auto;
+        #canvas {
+            width: 300px;
+            height: 300px;
+            margin: 10px auto;
+        }
     }
 </style>
