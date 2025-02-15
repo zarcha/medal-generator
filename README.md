@@ -1,2 +1,3 @@
 # Medabot Medarotch Medal Generator
-- This app is designed to be a simplistic number to medal hole generator to show what holes need to be kept when editing the base Medal STL file.
+- This app is designed to generate and display an `.stl` to print a Medarotch Madabot Medal with the desired number.
+- Currently supported from 1 to 255, advanced medals may be added later.
