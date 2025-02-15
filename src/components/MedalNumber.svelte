@@ -1,13 +1,14 @@
 <script>
     let { value = $bindable() } = $props();
-    let tmpNumber = $state(0);
+    let valid = $state(true);
+
+    function inputValidation(){
+        valid = value <= 255 && value >= 0;
+    }
 </script>
 
 <div>
-    <div class="input-group mb-3">
-        <input type="number" class="form-control" bind:value={tmpNumber}>
-        <button class="btn btn-warning" onclick={() => {value = tmpNumber}}>Generate</button>
-    </div>
+    <input type="number" class="form-control {valid ? '' : 'is-invalid'}" bind:value={value} oninput={inputValidation}>
 </div>
 
 <style>

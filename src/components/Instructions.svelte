@@ -6,9 +6,9 @@
     <h3>Instructions</h3>
     <hr />
     <ul>
-        <li>Enter the desired medal number above and click 'Generate'.</li>
-        <li>Download the medal '.stl' file from <a href="https://www.thingiverse.com/thing:6949372">Thingyverse</a>.</li>
-        <li>Using an STL editor like TinkerCAD use squares to fill the holes that do not show in generated medal.</li>
+        <li>Enter the desired medal number above and click 'Generate Medal'.</li>
+        <li>Download the medal's '.stl' file and load it into your slicer.</li>
+        <li>Tested at 0.2mm layer height on Bambu P1S</li>
     </ul>
 </div>
 
