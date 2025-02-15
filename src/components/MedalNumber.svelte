@@ -4,18 +4,20 @@
     let tmpValue = $state()
 
     function inputValidation(){
-        valid = value <= 255 && value >= 0;
+        valid = tmpValue < 255 && tmpValue > 0;
     }
 
     function generate(){
-        generating = true;
-        value = tmpValue;
+        if(value){
+            generating = true;
+            value = tmpValue;
+        }
     }
 </script>
 
 <div>
     <div class="input-group mb-3">
-        <input type="number" class="form-control {valid ? '' : 'is-invalid'}" bind:value={tmpValue} oninput={inputValidation} placeholder="Medal Number">
+        <input type="number" class="form-control {valid ? '' : 'is-invalid'}" bind:value={tmpValue} oninput={inputValidation} placeholder="Medal Number 1-254">
         <button class="btn btn-warning" onclick={generate}>Generate</button>
     </div>
 </div>
