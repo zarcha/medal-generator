@@ -14,7 +14,7 @@
 
     function setup(){
         scene = new THREE.Scene();
-        camera = new THREE.PerspectiveCamera(45, 300 / 300, .1, 1000);
+        camera = new THREE.PerspectiveCamera(75, 300 / 300, .1, 1000);
         renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setClearColor(0x000000, 0);
         const canvas = document.getElementById('canvas');
@@ -22,10 +22,11 @@
         canvas.innerHTML = '';
         canvas.appendChild(renderer.domElement);
         camera.rotateY(Math.PI);
-        camera.position.set(0, 0, -37);
+        camera.position.set(0, 0, -20);
 
         const light = new THREE.DirectionalLight(0xffffff, 1);
-        light.position.set(5, 10, -30);
+        light.position.set(0, 0, -30);
+        light.rotateX(35 * Math.PI / 180);
         scene.add(light);
     }
 
