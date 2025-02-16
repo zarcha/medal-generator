@@ -2,7 +2,7 @@
 
 </script>
 
-<div>
+<div class="footer-container">
     <div>
         <span>Zach Lambert © 2025</span>
     </div>
@@ -14,6 +14,10 @@
 </div>
 
 <style>
+    .footer-container {
+        margin-bottom: 20px;
+    }
+
     div {
         text-align: center;
         color: gray;
