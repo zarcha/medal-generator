@@ -1,16 +1,16 @@
 <script>
     import {delay, hex2bin, int2hex} from "../lib/util.js";
     import * as THREE from 'three';
-    import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
+    import { STLLoader } from 'three/examples/jsm/loaders/STLLoader.js';
     import { STLExporter} from "three/addons";
     import {onMount} from "svelte";
 
     let { value } = $props();
-    let generating = $state(false);
     let scene;
     let camera;
     let renderer;
     let medalMesh;
+
     const globalMaterial = new THREE.MeshStandardMaterial({ color: 0xd3b40b, metalness: 0.5, roughness: 0.5 });
 
     function setup(){
@@ -36,12 +36,22 @@
         return new Promise((resolve) => {
             const loader = new STLLoader();
             loader.load('medal.stl', function (geometry) {
-                const material = globalMaterial;
                 geometry.center();
-                medalMesh = new THREE.Mesh(geometry, material);
+                medalMesh = new THREE.Mesh(geometry, globalMaterial);
                 resolve();
             });
         });
+    }
+
+    function fillNormalMedal(){
+        const geometry = new THREE.CylinderGeometry(1.3, 1.3, 1.25, 32);
+        geometry.rotateX(90 * Math.PI / 180)
+
+        const fillMesh = new THREE.Mesh(geometry, globalMaterial);
+        fillMesh.position.set(-9.25, 0.5, -0.38);
+        fillMesh.updateMatrix();
+
+        scene.add(fillMesh);
     }
 
     function fillHole(hole){
@@ -49,10 +59,9 @@
         hole = hole > 3 ? hole - 4 : hole;
         let posX = (4.5 * hole) - 6.75;
         const geometry = new THREE.CylinderGeometry(1.3, 1.3, 1.25, 32);
-        const material = globalMaterial;
         geometry.rotateX(90 * Math.PI / 180)
 
-        const fillMesh = new THREE.Mesh(geometry, material);
+        const fillMesh = new THREE.Mesh(geometry, globalMaterial);
         fillMesh.position.set(posX, posY, -0.38);
         fillMesh.updateMatrix();
 
@@ -79,11 +88,14 @@
     }
 
     async function generateMedal(){
-        if(value <= 255 && value >= 0){
-            generating = true;
             setup();
             await loadMedalSTL();
-            const tmpBitArray = hex2bin(int2hex(value)).split('');
+
+            if(value < 255){
+                fillNormalMedal();
+            }
+
+            const tmpBitArray = hex2bin(int2hex(value > 255 ? value - 256 : value)).split('');
             const bitArray = tmpBitArray.slice(0, 4).reverse().concat(tmpBitArray.slice(4, 8).reverse());
 
             for(let i = 0; i < bitArray.length; i++) {
@@ -94,8 +106,6 @@
 
             scene.add(medalMesh);
             renderer.render(scene, camera);
-            generating = false;
-        }
     }
 
     onMount(() => {

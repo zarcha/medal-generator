@@ -12,7 +12,22 @@
             <li>Tested at 0.2mm layer height on Bambu P1S</li>
         </ul>
         <hr />
-        <p>Having trouble? Submit an issue to the <a href="https://github.com/zarcha/medal-generator/issues" target="_blank">GitHub</a> project.</p>
+        <h3>Troubleshooting</h3>
+        <hr />
+        <ul style="max-width: 500px">
+            <li>
+                Not the expected Medabot?
+                <br />
+                These devices are old and cheaply made, the membrane for the medal recognition might need cleaned on the inside but something pressing the buttons a bunch and trying again can fix the issue.
+            </li>
+            <br />
+            <li>
+                Its a little loose in the watch, is that a problem?
+                <br />
+                The model is made slightly loose for different printers, and im am only 'ok' at modeling but it has not been a problem so far.
+            </li>
+        </ul>
+        <p>Still having trouble? Submit an issue to the <a href="https://github.com/zarcha/medal-generator/issues" target="_blank">GitHub</a> project.</p>
     </div>
 </div>
 
