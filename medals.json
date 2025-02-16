@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1,
+    "name": "Kuwagata",
+    "stage": 1
+  },
+  {
+    "id": 5,
+    "name": "Kuwagata",
+    "stage": 2
+  },
+  {
+    "id": 6,
+    "name": "Kuwagata",
+    "stage": 2
+  },
+  {
+    "id": 9,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 11,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 13,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 14,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 17,
+    "name": "Kuwagata",
+    "stage": 4
+  },
+  {
+    "id": 19,
+    "name": "Kuwagata",
+    "stage": 4
+  },
+  {
+    "id": 21,
+    "name": "Kabuto",
+    "stage": 1
+  },
+  {
+    "id": 31,
+    "name": "Kabuto",
+    "stage": 3
+  },
+  {
+    "id": 33,
+    "name": "Kabuto",
+    "stage": 3
+  },
+  {
+    "id": 34,
+    "name": "Kabuto",
+    "stage": 3
+  },
+  {
+    "id": 36,
+    "name": "Kabuto",
+    "stage": 4
+  },
+  {
+    "id": 37,
+    "name": "Kabuto",
+    "stage": 4
+  },
+  {
+    "id": 41,
+    "name": "Tortoise",
+    "stage": 1
+  },
+  {
+    "id": 41,
+    "name": "Saurus",
+    "stage": 1
+  },
+  {
+    "id": 43,
+    "name": "Tortoise",
+    "stage": 2
+  },
+  {
+    "id": 45,
+    "name": "Tortoise",
+    "stage": 2
+  },
+  {
+    "id": 46,
+    "name": "Tortoise",
+    "stage": 2
+  },
+  {
+    "id": 49,
+    "name": "Tortoise",
+    "stage": 2
+  },
+  {
+    "id": 53,
+    "name": "Vehicle",
+    "stage": 1
+  },
+  {
+    "id": 63,
+    "name": "Bear",
+    "stage": 3
+  },
+  {
+    "id": 65,
+    "name": "Kumo",
+    "stage": 1
+  },
+  {
+    "id": 78,
+    "name": "Snake",
+    "stage": 2
+  },
+  {
+    "id": 83,
+    "name": "Queen",
+    "stage": 1
+  },
+  {
+    "id": 89,
+    "name": "Kraken",
+    "stage": 1
+  },
+  {
+    "id": 102,
+    "name": "Phoenix",
+    "stage": 1
+  },
+  {
+    "id": 109,
+    "name": "Unicorn",
+    "stage": 2
+  },
+  {
+    "id": 109,
+    "name": "Kappa",
+    "stage": 1
+  },
+  {
+    "id": 110,
+    "name": "Unicorn",
+    "stage": 2
+  },
+  {
+    "id": 114,
+    "name": "Unicorn",
+    "stage": 3
+  },
+  {
+    "id": 115,
+    "name": "Unicorn",
+    "stage": 2
+  },
+  {
+    "id": 117,
+    "name": "Mirage",
+    "stage": 2
+  },
+  {
+    "id": 118,
+    "name": "Ghost",
+    "stage": 21
+  },
+  {
+    "id": 126,
+    "name": "Ghost",
+    "stage": 3
+  },
+  {
+    "id": 129,
+    "name": "Knight",
+    "stage": 1
+  },
+  {
+    "id": 133,
+    "name": "Knight",
+    "stage": 2
+  },
+  {
+    "id": 137,
+    "name": "Knight",
+    "stage": 3
+  },
+  {
+    "id": 138,
+    "name": "Knight",
+    "stage": 3
+  },
+  {
+    "id": 142,
+    "name": "Mermaid",
+    "stage": 1
+  },
+  {
+    "id": 143,
+    "name": "Mermaid",
+    "stage": 2
+  },
+  {
+    "id": 154,
+    "name": "Penguin",
+    "stage": 2
+  },
+  {
+    "id": 158,
+    "name": "Penguin",
+    "stage": 2
+  },
+  {
+    "id": 173,
+    "name": "Kappa",
+    "stage": 2
+  },
+  {
+    "id": 177,
+    "name": "Ohkami",
+    "stage": 1
+  },
+  {
+    "id": 186,
+    "name": "Chameleon",
+    "stage": 1
+  },
+  {
+    "id": 194,
+    "name": "Usagi",
+    "stage": 1
+  },
+  {
+    "id": 197,
+    "name": "Usagi",
+    "stage": 2
+  },
+  {
+    "id": 205,
+    "name": "Saru",
+    "stage": 2
+  },
+  {
+    "id": 209,
+    "name": "Devil",
+    "stage": 1
+  },
+  {
+    "id": 210,
+    "name": "Devil",
+    "stage": 1
+  },
+  {
+    "id": 221,
+    "name": "Shinobi",
+    "stage": 1
+  },
+  {
+    "id": 222,
+    "name": "Ninja",
+    "stage": 1
+  },
+  {
+    "id": 225,
+    "name": "Alien",
+    "stage": 1
+  },
+  {
+    "id": 229,
+    "name": "Heel",
+    "stage": 1
+  },
+  {
+    "id": 241,
+    "name": "Mermaid",
+    "stage": 1
+  },
+  {
+    "id": 242,
+    "name": "Botoruro",
+    "stage": 1
+  },
+  {
+    "id": 245,
+    "name": "Aku",
+    "stage": 1
+  },
+  {
+    "id": 251,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 257,
+    "name": "Kuwagata",
+    "stage": 1
+  },
+  {
+    "id": 261,
+    "name": "Kabuto",
+    "stage": 2
+  },
+  {
+    "id": 265,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 266,
+    "name": "Kuwagata",
+    "stage": 3
+  },
+  {
+    "id": 269,
+    "name": "Kuwagata",
+    "stage": 4
+  },
+  {
+    "id": 273,
+    "name": "Kuwagata",
+    "stage": 4
+  },
+  {
+    "id": 274,
+    "name": "Kuwagata",
+    "stage": 5
+  },
+  {
+    "id": 281,
+    "name": "Kabuto",
+    "stage": 2
+  },
+  {
+    "id": 286,
+    "name": "Kabuto",
+    "stage": 3
+  },
+  {
+    "id": 287,
+    "name": "Kabuto",
+    "stage": 3
+  },
+  {
+    "id": 289,
+    "name": "Kabuto",
+    "stage": 4
+  },
+  {
+    "id": 293,
+    "name": "Kabuto",
+    "stage": 4
+  },
+  {
+    "id": 321,
+    "name": "Marine",
+    "stage": 2
+  },
+  {
+    "id": 337,
+    "name": "Time",
+    "stage": 2
+  },
+  {
+    "id": 361,
+    "name": "North",
+    "stage": 2
+  },
+  {
+    "id": 461,
+    "name": "King",
+    "stage": 1
+  },
+  {
+    "id": 465,
+    "name": "King",
+    "stage": 2
+  },
+  {
+    "id": 473,
+    "name": "Jack",
+    "stage": 2
+  },
+  {
+    "id": 477,
+    "name": "Queen",
+    "stage": 1
+  },
+  {
+    "id": 481,
+    "name": "Queen",
+    "stage": 2
+  },
+  {
+    "id": 489,
+    "name": "Ace",
+    "stage": 2
+  }
+]
