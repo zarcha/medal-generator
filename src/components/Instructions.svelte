@@ -23,7 +23,7 @@
             <li>
                 <span class="trouble-title">Its a little loose in the watch, is that a problem?</span>
                 <br />
-                The model is made slightly loose for different printers, and I am only 'ok' at modeling but it has not been a problem so far.
+                The model is made slightly loose for different printers, and I am only 'ok' at modeling but the looseness has not been a problem so far.
             </li>
         </ul>
         <p>Still having trouble? Submit an issue to the <a href="https://github.com/zarcha/medal-generator/issues" target="_blank">GitHub</a> project.</p>
